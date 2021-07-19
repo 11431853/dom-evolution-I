@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My jewels</title>
+        <style>
+            img {
+                width: 70%;
+                height: 200px;
+            }
+            #data {
+                display: grid;
+                grid-template-columns: repeat(4, 20%);
+                grid-gap: 5%;
+                clear: both;
+            }
+            h1{
+                text-align: center;
+            }
+            #items {
+                float: right;;
+                padding-right: 40px;
+            }
+            #promo {
+                padding-top: 100px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>My selected jewel items</h1>
+        <div id="items">
+            <p>Total No of items:<b id="count"></b></p>
+            <p>Total cost:<b id="price"></b></p>
+        </div>
+
+        <div id="data"></div>
+
+        <form id="promo">
+            <input type="text" id="value">
+            <button onclick="checkpromo()">Apply Promo</button>
+            <br>
+            <br>
+            <button onclick="checkout()">Check Out</button>
+        </form>
+    </body>
+</html>
+<script src="myjewel.js">
+
+</script>
